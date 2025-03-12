@@ -1,0 +1,78 @@
+"use client"
+
+import { motion } from "framer-motion"
+import Link from "next/link"
+import Navigation from "@/components/navigation"
+import { FloatingCylinders } from "@/components/floating-cylinders"
+
+export default function Contact() {
+
+
+  return (
+    <main className="relative min-h-screen overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
+      {/* 3D Background */}
+          <FloatingCylinders />
+ 
+
+      {/* Navigation */}
+      <Navigation />
+
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-start justify-center min-h-screen px-4 py-20">
+        <div className="max-w-6xl mx-auto w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mb-12"
+          >
+            <h1 className="text-5xl md:text-6xl font-medium tracking-wide text-slate-700 dark:text-slate-200 border-b border-slate-300 dark:border-slate-700 pb-4">
+              CONTACT
+            </h1>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <h2 className="text-2xl text-slate-600 dark:text-slate-300 mb-4">MAIL</h2>
+              <Link
+                href="mailto:hello@itssharl.ee"
+                className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+              >
+                → hello@itssharl.ee
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <h2 className="text-2xl text-slate-600 dark:text-slate-300 mb-4">SOCIAL MEDIAS</h2>
+              <div className="space-y-3">
+                <Link
+                  href="https://instagram.com"
+                  target="_blank"
+                  className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                >
+                  → instagram
+                </Link>
+                <Link
+                  href="https://behance.net"
+                  target="_blank"
+                  className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                >
+                  → behance
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </main>
+  )
+}
+
