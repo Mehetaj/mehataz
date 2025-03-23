@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { FloatingCylinders } from "./floating-cylinders"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -60,6 +61,8 @@ export default function Navigation() {
           </svg>
         </Link>
       </div>
+
+      <FloatingCylinders />
 
       {/* Menu Toggle Button */}
       <div className="fixed top-6 right-6 z-50">
@@ -159,18 +162,25 @@ export default function Navigation() {
 
             <motion.div custom={4} variants={linkVariants} className="mt-12 flex space-x-6">
               <Link
-                href="https://instagram.com"
+                href="https://www.linkedin.com/in/mehetaj-khandaker-/"
                 target="_blank"
-                className="flex items-center text-slate-600 hover:text-slate-900 transition-colors"
+                className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
               >
-                <span className="mr-2">→</span> instagram
+                → LinkedIn
               </Link>
               <Link
-                href="https://behance.net"
+                href="https://www.instagram.com/_mehetaj/"
                 target="_blank"
-                className="flex items-center text-slate-600 hover:text-slate-900 transition-colors"
+                className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
               >
-                <span className="mr-2">→</span> behance
+                → instagram
+              </Link>
+              <Link
+                href="https://www.facebook.com/profile.php?id=100083754050543"
+                target="_blank"
+                className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+              >
+                → Facebook
               </Link>
             </motion.div>
           </div>

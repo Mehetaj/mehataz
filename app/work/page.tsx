@@ -4,68 +4,54 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import Navigation from "@/components/navigation"
 import { FloatingCylinders } from "@/components/floating-cylinders"
+import { useEffect, useState } from "react"
 
 export default function Work() {
-   
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const projects = [
         {
             id: 1,
-            title: "sharlee",
-            category: "Branding",
-            link: "/work/sharlee",
+            title: "Mehetaz's Portfolio",
+            link: "https://mehataz.netlify.app/",
+            github: "https://github.com/Mehetaj/mehataz"
         },
         {
             id: 2,
-            title: "act responsable",
-            category: "Web Development",
-            link: "/work/act-responsable",
+            title: "JobPaw",
+            link: "https://jobpaw-react.vercel.app/",
+            github: "https://github.com/MH-Fahim11/jobpaw-React"
         },
         {
             id: 3,
-            title: "dua lipa",
-            category: "Portrait",
-            link: "/work/dua-lipa",
+            title: "Official Website",
+            link: "https://officialwebsite.vercel.app/",
+            github: "https://github.com/Mehetaj/jerins-client"
         },
         {
             id: 4,
-            title: "cocolyze",
-            category: "UX/UI Design",
-            link: "/work/cocolyze",
+            title: "Bistro Boss",
+            link: "https://bistro-boss-4c0b8.web.app/",
+            github: "https://github.com/Mehetaj/bistro-boss-client"
         },
         {
             id: 5,
-            title: "les indécis",
-            category: "Branding",
-            link: "/work/les-indecis",
-        },
-        {
-            id: 6,
-            title: "game of the goose",
-            category: "Game Design",
-            link: "/work/game-of-the-goose",
-        },
-        {
-            id: 7,
-            title: "l'équipe explore",
-            category: "Illustration",
-            link: "/work/lequipe-explore",
-        },
-        {
-            id: 8,
-            title: "silhouette",
-            category: "Portrait",
-            link: "/work/silhouette",
-        },
-    ]
+            title: "Career Solution",
+            link: "https://career-solution-website.vercel.app/", 
+            github: "https://github.com/Mehetaj/career-solution"
+        }
+    ];
 
     return (
         <main className="relative min-h-screen overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
+            
+            {/* Render only on client-side */}
+            {isClient && <FloatingCylinders />}
 
-            <FloatingCylinders />
-
-
-            {/* Navigation */}
             <Navigation />
 
             {/* Content */}
@@ -96,7 +82,9 @@ export default function Work() {
                                     <div className="text-xl md:text-2xl font-light text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">
                                         → {project.title}
                                     </div>
-                                    <div className="text-right text-slate-500 dark:text-slate-400">{project.category}</div>
+                                    <div className="text-right text-slate-500 dark:text-slate-400">
+                                        <Link href={project.github}>Github Code</Link>
+                                    </div>
                                 </Link>
                             </motion.div>
                         ))}
@@ -106,4 +94,3 @@ export default function Work() {
         </main>
     )
 }
-

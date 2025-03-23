@@ -33,15 +33,15 @@ export default function Home() {
             </div>
           </h1>
           <p className="mt-6 text-gray-600 dark:text-gray-300 text-lg">
-            I&apos;m a graphic designer, UX/UI designer
-            <br />& front-end web developer
+            I&apos;m a Full-Stack Developer,
+            <br />& Competitive Programmer
           </p>
           <div className="mt-10 flex gap-8 text-gray-600 dark:text-gray-300">
             <Link
-              href="/projects"
+              href="/work"
               className="flex items-center hover:text-gray-900 dark:hover:text-white transition-colors"
             >
-              <span className="mr-2">→</span> see my projects
+              <span className="mr-2">→</span> see my works
             </Link>
             <Link
               href="/about"

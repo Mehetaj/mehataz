@@ -5,14 +5,15 @@ import Link from "next/link"
 import Navigation from "@/components/navigation"
 import { FloatingCylinders } from "@/components/floating-cylinders"
 
+
 export default function Contact() {
 
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
       {/* 3D Background */}
-          <FloatingCylinders />
- 
+      <FloatingCylinders />
+
 
       {/* Navigation */}
       <Navigation />
@@ -39,10 +40,10 @@ export default function Contact() {
             >
               <h2 className="text-2xl text-slate-600 dark:text-slate-300 mb-4">MAIL</h2>
               <Link
-                href="mailto:hello@itssharl.ee"
+                href="mailto:mehetajkhandaker@gmail.com"
                 className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
               >
-                → hello@itssharl.ee
+                → mehetajkhandaker@gmail.com
               </Link>
             </motion.div>
 
@@ -54,18 +55,25 @@ export default function Contact() {
               <h2 className="text-2xl text-slate-600 dark:text-slate-300 mb-4">SOCIAL MEDIAS</h2>
               <div className="space-y-3">
                 <Link
-                  href="https://instagram.com"
+                  href="https://www.linkedin.com/in/mehetaj-khandaker-/"
+                  target="_blank"
+                  className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                >
+                  → LinkedIn
+                </Link>
+                <Link
+                  href="https://www.instagram.com/_mehetaj/"
                   target="_blank"
                   className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
                 >
                   → instagram
                 </Link>
                 <Link
-                  href="https://behance.net"
+                  href="https://www.facebook.com/profile.php?id=100083754050543"
                   target="_blank"
                   className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
                 >
-                  → behance
+                  → Facebook
                 </Link>
               </div>
             </motion.div>

@@ -7,7 +7,7 @@ import Image from "next/image"
 import { FloatingCylinders } from "@/components/floating-cylinders"
 
 export default function About() {
- 
+
 
     return (
         <main className="relative min-h-screen overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
@@ -33,11 +33,12 @@ export default function About() {
 
                         <div className="text-slate-700 dark:text-slate-300 space-y-6">
                             <p className="text-lg">
-                                Hey, my name is Charles Bruyerre and I use Sharlee as my nickname across social medias. I&apos;m a
-                                graphic designer, UX/UI designer & front-end web developer from France. I&apos;m also passionate about
-                                pop music and make portraits and universes around what I listen to and I&apos;m always curious to learn
-                                more when it comes to new technologies and creative coding.
+                                Hey, my name is Mehataz Khandokar. I'm a full-stack web developer specializing in React, Next.js, Node.js, and Express.js.
+                                I have experience in frontend and backend development, creating multi-client service websites, portfolio projects,
+                                and management platforms. I'm also a problem solver, passionate about UI/UX design, and always eager to explore
+                                new technologies, improve my coding skills, and build innovative solutions.
                             </p>
+
 
                             <Link
                                 href="/resume.pdf"
@@ -76,8 +77,9 @@ export default function About() {
                         className="relative h-full min-h-[400px]"
                     >
                         <Image
-                            src="/placeholder.svg?height=800&width=600"
-                            alt="Charles Bruyerre"
+                            src="/profile.jpeg?height=800&width=600"
+                            alt="Md Mehataz Khandokar"
+                            
                             fill
                             className="object-cover rounded-lg"
                             priority
