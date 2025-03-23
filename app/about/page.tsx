@@ -33,12 +33,11 @@ export default function About() {
 
                         <div className="text-slate-700 dark:text-slate-300 space-y-6">
                             <p className="text-lg">
-                                Hey, my name is Mehataz Khandokar. I'm a full-stack web developer specializing in React, Next.js, Node.js, and Express.js.
+                                Hey, my name is Mehataz Khandokar. I&apos;m a full-stack web developer specializing in React, Next.js, Node.js, and Express.js.
                                 I have experience in frontend and backend development, creating multi-client service websites, portfolio projects,
-                                and management platforms. I'm also a problem solver, passionate about UI/UX design, and always eager to explore
+                                and management platforms. I&apos;m also a problem solver, passionate about UI/UX design, and always eager to explore
                                 new technologies, improve my coding skills, and build innovative solutions.
                             </p>
-
 
                             <Link
                                 href="/resume.pdf"
@@ -70,6 +69,7 @@ export default function About() {
                         </div>
                     </motion.div>
 
+
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -79,7 +79,7 @@ export default function About() {
                         <Image
                             src="/profile.jpeg?height=800&width=600"
                             alt="Md Mehataz Khandokar"
-                            
+
                             fill
                             className="object-cover rounded-lg"
                             priority
