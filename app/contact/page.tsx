@@ -10,7 +10,7 @@ export default function Contact() {
 
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
+    <main className="relative min-h-screen overflow-hidden bg-white  transition-colors duration-300">
       {/* 3D Background */}
       <FloatingCylinders />
 
@@ -27,7 +27,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="mb-12"
           >
-            <h1 className="text-5xl md:text-6xl font-medium tracking-wide text-slate-700 dark:text-slate-200 border-b border-slate-300 dark:border-slate-700 pb-4">
+            <h1 className="text-5xl md:text-6xl font-medium tracking-wide text-slate-700  border-b border-slate-300  pb-4">
               CONTACT
             </h1>
           </motion.div>
@@ -38,10 +38,10 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="text-2xl text-slate-600 dark:text-slate-300 mb-4">MAIL</h2>
+              <h2 className="text-2xl text-slate-600  mb-4">MAIL</h2>
               <Link
                 href="mailto:mehetajkhandaker@gmail.com"
-                className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                className="text-xl text-slate-700  hover:text-slate-900  transition-colors flex items-center"
               >
                 → mehetajkhandaker@gmail.com
               </Link>
@@ -52,26 +52,26 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <h2 className="text-2xl text-slate-600 dark:text-slate-300 mb-4">SOCIAL MEDIAS</h2>
+              <h2 className="text-2xl text-slate-600  mb-4">SOCIAL MEDIAS</h2>
               <div className="space-y-3">
                 <Link
                   href="https://www.linkedin.com/in/mehetaj-khandaker-/"
                   target="_blank"
-                  className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                  className="text-xl text-slate-700  hover:text-slate-900  transition-colors flex items-center"
                 >
                   → LinkedIn
                 </Link>
                 <Link
                   href="https://www.instagram.com/_mehetaj/"
                   target="_blank"
-                  className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                  className="text-xl text-slate-700  hover:text-slate-900  transition-colors flex items-center"
                 >
                   → instagram
                 </Link>
                 <Link
                   href="https://www.facebook.com/profile.php?id=100083754050543"
                   target="_blank"
-                  className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                  className="text-xl text-slate-700  hover:text-slate-900  transition-colors flex items-center"
                 >
                   → Facebook
                 </Link>

@@ -47,7 +47,7 @@ export default function Work() {
     ];
 
     return (
-        <main className="relative min-h-screen overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
+        <main className="relative min-h-screen overflow-hidden bg-white  transition-colors duration-300">
             
             {/* Render only on client-side */}
             {isClient && <FloatingCylinders />}
@@ -63,9 +63,9 @@ export default function Work() {
                         transition={{ duration: 0.8 }}
                         className="mb-12"
                     >
-                        <h1 className="text-5xl md:text-6xl font-medium tracking-wide text-slate-700 dark:text-slate-200 border-b border-slate-300 dark:border-slate-700 pb-4">
+                        <h1 className="text-5xl md:text-9xl font-medium tracking-wide text-slate-700  border-b border-slate-300  pb-4">
                             WORK
-                            <span className="text-lg ml-4 text-slate-500 dark:text-slate-400">9</span>
+                            <span className="text-lg ml-4 text-slate-500 ">9</span>
                         </h1>
                     </motion.div>
 
@@ -76,13 +76,13 @@ export default function Work() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                                className="border-b border-slate-300 dark:border-slate-700 py-6"
+                                className="border-b border-slate-300  py-6"
                             >
                                 <Link href={project.link} className="group grid grid-cols-1 md:grid-cols-2 items-center">
-                                    <div className="text-xl md:text-2xl font-light text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">
+                                    <div className="text-xl md:text-5xl font-light text-slate-700  group-hover:text-slate-900  transition-colors">
                                         → {project.title}
                                     </div>
-                                    <div className="text-right text-slate-500 dark:text-slate-400">
+                                    <div className="text-right text-slate-500 ">
                                         <Link href={project.github}>Github Code</Link>
                                     </div>
                                 </Link>

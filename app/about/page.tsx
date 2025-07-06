@@ -10,7 +10,7 @@ export default function About() {
 
 
     return (
-        <main className="relative min-h-screen overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
+        <main className="relative min-h-screen overflow-hidden bg-white  transition-colors duration-300">
 
             <FloatingCylinders />
 
@@ -27,12 +27,12 @@ export default function About() {
                         transition={{ duration: 0.8 }}
                         className="mb-8"
                     >
-                        <h1 className="text-5xl md:text-6xl font-medium tracking-wide text-slate-700 dark:text-slate-200 border-b border-slate-300 dark:border-slate-700 pb-4 mb-8">
+                        <h1 className="text-5xl md:text-9xl font-medium tracking-wide text-slate-700  border-b border-slate-300  pb-4 mb-8">
                             ABOUT
                         </h1>
 
-                        <div className="text-slate-700 dark:text-slate-300 space-y-6">
-                            <p className="text-lg">
+                        <div className="text-slate-700  space-y-6">
+                            <p className="text-2xl">
                                 Hey, my name is Mehataz Khandokar. I&apos;m a full-stack web developer specializing in React, Next.js, Node.js, and Express.js.
                                 I have experience in frontend and backend development, creating multi-client service websites, portfolio projects,
                                 and management platforms. I&apos;m also a problem solver, passionate about UI/UX design, and always eager to explore
@@ -41,7 +41,7 @@ export default function About() {
 
                             <Link
                                 href="/resume.pdf"
-                                className="inline-flex items-center text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
+                                className="inline-flex items-center text-slate-600  hover:text-slate-900  transition-colors"
                             >
                                 ↓ resume
                             </Link>
@@ -77,7 +77,7 @@ export default function About() {
                         className="relative h-full min-h-[400px]"
                     >
                         <Image
-                            src="/profile.jpeg?height=800&width=600"
+                            src="/profile.jpg?height=1200&width=900"
                             alt="Md Mehataz Khandokar"
 
                             fill

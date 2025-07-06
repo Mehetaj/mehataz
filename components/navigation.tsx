@@ -118,7 +118,7 @@ export default function Navigation() {
               <motion.div custom={0} variants={linkVariants}>
                 <Link
                   href="/"
-                  className="group flex items-center text-5xl md:text-7xl font-light text-slate-600 hover:text-slate-900 transition-colors"
+                  className="group flex items-center text-5xl md:text-9xl font-light text-slate-600 hover:text-slate-900 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   <span className="opacity-50 mr-4 text-2xl md:text-3xl">01</span>
@@ -129,7 +129,7 @@ export default function Navigation() {
               <motion.div custom={1} variants={linkVariants}>
                 <Link
                   href="/work"
-                  className="group flex items-center text-5xl md:text-7xl font-light text-slate-600 hover:text-slate-900 transition-colors"
+                  className="group flex items-center text-5xl md:text-9xl font-light text-slate-600 hover:text-slate-900 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   <span className="opacity-50 mr-4 text-2xl md:text-3xl">02</span>
@@ -140,7 +140,7 @@ export default function Navigation() {
               <motion.div custom={2} variants={linkVariants}>
                 <Link
                   href="/about"
-                  className="group flex items-center text-5xl md:text-7xl font-light text-slate-600 hover:text-slate-900 transition-colors"
+                  className="group flex items-center text-5xl md:text-9xl font-light text-slate-600 hover:text-slate-900 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   <span className="opacity-50 mr-4 text-2xl md:text-3xl">03</span>
@@ -151,7 +151,7 @@ export default function Navigation() {
               <motion.div custom={3} variants={linkVariants}>
                 <Link
                   href="/contact"
-                  className="group flex items-center text-5xl md:text-7xl font-light text-slate-600 hover:text-slate-900 transition-colors"
+                  className="group flex items-center text-5xl md:text-9xl font-light text-slate-600 hover:text-slate-900 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   <span className="opacity-50 mr-4 text-2xl md:text-3xl">04</span>
@@ -164,21 +164,21 @@ export default function Navigation() {
               <Link
                 href="https://www.linkedin.com/in/mehetaj-khandaker-/"
                 target="_blank"
-                className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                className="text-xl text-slate-700  hover:text-slate-900  transition-colors flex items-center"
               >
                 → LinkedIn
               </Link>
               <Link
                 href="https://www.instagram.com/_mehetaj/"
                 target="_blank"
-                className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                className="text-xl text-slate-700  hover:text-slate-900  transition-colors flex items-center"
               >
                 → instagram
               </Link>
               <Link
                 href="https://www.facebook.com/profile.php?id=100083754050543"
                 target="_blank"
-                className="text-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors flex items-center"
+                className="text-xl text-slate-700  hover:text-slate-900  transition-colors flex items-center"
               >
                 → Facebook
               </Link>
